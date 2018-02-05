@@ -1,3 +1,5 @@
+/* has manually inputted graph as oppposed to viz2.js which has a function to read the graph */
+
 var cy = cytoscape({
         container: document.getElementById('cy'),
         elements: 
@@ -20,38 +22,8 @@ var cy = cytoscape({
               id: '12',
               source: '1',
               target: '2'
-            }/*,
-            data: {
-              id: '23',
-              source: '2',
-              target: '3'
-            },
-            data: {
-              id: '24',
-              source: '2',
-              target: '4'
-            },
-            data: {
-              id: '25',
-              source: '2',
-              target: '5'
-            }*/
-          }] 
-         /* [
-          { data: { id: 'a' } },
-          { data: { id: 'b' } },
-          {
-            data: {
-              id: 'ab',
-              source: 'a',
-              target: 'b'
             }
-          }] */ 
+          }] 
+
       });
 
-/* 
-var graph = { "vertices" : [0,1,2,3,4,5,6,7],
-              "edges" : [[0,1], [1,2], [2,3], [2,4], [2,5], [4,7], [6,7], [7,6]]}; */ 
-              
-
-        

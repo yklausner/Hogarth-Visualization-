@@ -1,9 +1,11 @@
+/* uses cytoscape to load the graph, assign the elements, and assign different style properties */ 
+
 var cy = cytoscape({
         container: document.getElementById('cy'),
         elements: graph_to_elements(graph),
         //style: 'node { background-color: blue; }',
         style: [ // the stylesheet for the graph
-        {
+        { /* adds different style properties for vertices */ 
           selector: 'node',
           style: {
             'background-color': 'grey',
@@ -11,7 +13,7 @@ var cy = cytoscape({
           }
         },
 
-        {
+        { /* adds different style properties for edges */ 
           selector: 'edge',
           style: {
             'width': 3,
@@ -32,7 +34,7 @@ var cy = cytoscape({
 
 
 
-
+/* function to turn inputted graph from data.js into an actual graph */ 
 function graph_to_elements(gr) {
     // turn given graph (gr) into something suitable as an elements array (viz.js)
     var elem = [];
